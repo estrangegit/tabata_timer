@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Tabata</string>
+    <string name="start">START</string>
+    <string name="prepare">Prepare</string>
+    <string name="work">Work</string>
+    <string name="rest">Rest</string>
+    <string name="cycles">Cycles</string>
+    <string name="tabata_count">Tabatas count</string>
+    <string name="rest_tabata">Rest between tabatas</string>
+    <string name="cool_down">Cool down</string>
+    <string name="sec">sec</string>
+    <string name="enter_tabata_s_name">Enter Tabata\'s name : </string>
+    <string name="select">select</string>
+    <string name="add">add</string>
+    <string name="update">update</string>
+    <string name="delete">delete</string>
+    <string name="title">title</string>
+    <string name="save">SAVE</string>
+    <string name="dialog_name_already_used">This name is already used</string>
+    <string name="dialog_name_empty">The selected name is emty</string>
+    <string name="dialog_incorrect_name">Name can only contain numbers and letters</string>
+    <string name="dialog_name_not_stored">This name is not stored in database</string>
+    <string name="dialog_title_error">Error</string>
+    <string name="liste_tabatas">Liste des tabatas enregistrés</string>
+</resources>

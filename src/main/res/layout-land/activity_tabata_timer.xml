@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_tabata_timer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tabata.TabataTimerActivity"
+    android:weightSum="1"
+    android:background="@color/colorPrimary">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.35">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:weightSum="1"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:id="@+id/act_tabata_period_iv"
+                android:background="@drawable/work_white"
+                android:layout_marginLeft="5dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:gravity="center">
+
+            <TextView
+                android:text="work"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/act_tabata_period_tv"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:text="0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/act_tabata_total_time_tv"
+                android:gravity="center"
+                android:paddingTop="0dp"
+                android:textSize="24sp"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:gravity="center">
+
+            <ImageButton
+                android:layout_width="49dp"
+                android:layout_height="49dp"
+                android:id="@+id/act_tabata_play_pause_button"
+                android:background="@drawable/play_white" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.3"
+        android:weightSum="1">
+
+        <TextView
+            android:text="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/act_tabata_time_period_tv"
+            android:textSize="100sp"
+            android:textColor="@android:color/white"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.35">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:weightSum="1"
+            android:gravity="center">
+
+            <ImageButton
+                android:layout_height="60dp"
+                android:id="@+id/act_tabata_back_button"
+                android:layout_gravity="center"
+                android:layout_width="20dp"
+                android:background="@drawable/back_white"
+                android:layout_weight="0.62" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:gravity="center">
+
+            <TextView
+                android:text="Cycle 1/2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/act_tabata_cycle_tv"
+                android:gravity="center"
+                android:paddingTop="0dp"
+                android:textSize="24sp"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:text="Tabata 1/2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/act_tabata_currentTabata_tv"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:gravity="center">
+
+            <ImageButton
+                android:layout_width="49dp"
+                android:layout_height="49dp"
+                android:id="@+id/act_tabata_next_button"
+                android:background="@drawable/next_white" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,93 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical|center_horizontal">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="248dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <NumberPicker
+            android:id="@+id/numberPicker1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignBaseline="@+id/numberPicker"
+            android:layout_alignBottom="@+id/numberPicker"
+            android:layout_alignParentRight="false"
+            android:layout_alignParentEnd="false"
+            android:layout_marginRight="0dp"
+            android:layout_marginEnd="0dp"
+            android:paddingRight="0dp"
+            android:layout_weight="1"
+            android:paddingLeft="0dp"
+            android:solidColor="@android:color/transparent" />
+
+        <TextView
+            android:text=":"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:layout_weight="1"
+            android:textSize="30sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/button_blue" />
+
+        <NumberPicker
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/numberPicker2"
+            android:layout_above="@+id/button2"
+            android:layout_alignLeft="@+id/button1"
+            android:layout_alignStart="@+id/button1"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="126dp"
+        android:weightSum="1"
+        android:gravity="center">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Set"
+                android:layout_alignBaseline="@+id/button2"
+                android:layout_alignBottom="@+id/button2"
+                android:layout_toLeftOf="@+id/numberPicker1"
+                android:layout_toStartOf="@+id/numberPicker1"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:textColor="@color/button_blue" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Cancel"
+                android:layout_marginBottom="0dp"
+                android:layout_alignParentBottom="false"
+                android:layout_alignLeft="@+id/numberPicker1"
+                android:layout_alignStart="@+id/numberPicker1"
+                android:layout_marginLeft="0dp"
+                android:layout_marginStart="0dp"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:textColor="@color/button_blue" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
